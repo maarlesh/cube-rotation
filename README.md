@@ -1,4 +1,5 @@
-This is my first try to use THREE.js
+This is my first try to use THREE.js <br>
+
 Created a simple Cube rotation animation
 
 Learnt about 
