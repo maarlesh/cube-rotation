@@ -7,4 +7,6 @@ Learnt about
 2. Renderer
 3. Camera
 4. Creating mesh
-5. adding material and adding to scene
+5. Material
+6. Unidirectional Light
+7. Shadow
