@@ -23,7 +23,7 @@ document.body.appendChild(renderer.domElement);
 //4.1 Create a BoxGeometry to store the dimension of the cube
 const geometry = new THREE.BoxGeometry(1,1,1);
 //4.2 Creating a material (MeshMaterial) to add to the cube it takes a argument to pass the properties (eg. color takes a hexadecimal value)
-const material = new THREE.MeshBasicMaterial( {color: 0xff80ff} );
+const material = new THREE.MeshStandardMaterial( {color: 0xff80ff, metalness : 0.1} );
 //4.3 Create a Mesh with the geometry and the material
 const cube = new THREE.Mesh(geometry,material);
 //4.4 add the cube to the scene
@@ -43,9 +43,19 @@ animate();
 
 //6.Creating a ground
 const groundGeometry = new THREE.PlaneGeometry(10,10);
-const groundMaterial = new THREE.MeshBasicMaterial( {color : 0x330033} );
+const groundMaterial = new THREE.MeshBasicMaterial( {color : 0xff80ff} );
 const ground = new THREE.Mesh(groundGeometry,groundMaterial);
 //rotating the ground
 ground.rotation.x = -45;
 ground.position.y = -2;
+ground.receiveShadow = true;
 scene.add(ground);
+
+//7. Adding Light
+const light = new THREE.DirectionalLight(0xffffff, 1);
+light.position.set(1, 1, 5);
+light.castShadow = true;
+scene.add(light);
+
+//8. Changing Scene Background color
+scene.background = new THREE.Color(0xffe6ff)
