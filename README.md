@@ -10,3 +10,9 @@ Learnt about
 5. Material
 6. Unidirectional Light
 7. Shadow
+
+Screenshots:
+
+<img width="1237" alt="image" src="https://github.com/maarlesh/cube-rotation/assets/66205301/bce662c7-ca3b-4731-8cf1-8efdc68d15c8">
+
+<img width="1237" alt="image" src="https://github.com/maarlesh/cube-rotation/assets/66205301/d48f934b-efdb-4da2-81b7-ec115d905bee">
